@@ -1,0 +1,152 @@
+body {
+  margin: auto;
+  width: 100%;
+  background-image: url('background.gif');
+  background-repeat: repeat;
+}
+.wrapper {
+  background-image: url('logo.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 300px;
+}
+nav {
+  display: block;
+  width: 100%;
+  margin: auto;
+  background-color: lavender;
+  position: relative;
+}
+nav img #headerpic {
+  width: 200px;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+}
+nav ul li {
+  display: inline;
+  margin: auto;
+  font-size: 30px;
+  padding-left: 10px;
+}
+.content {
+  width: 60%;
+  height: 100vh;
+  margin: auto;
+  background-color: lavender;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  margin: 10px;
+}
+.box1 {
+  display: block;
+  width: 100%;
+  height: 30%;
+  border-bottom: 1px solid black;
+}
+.box2 {
+  display: block;
+  width: 100%;
+  height: 30%;
+  border-bottom: 1px solid black;
+}
+.img1 {
+  display: inline-block;
+  padding: 30px;
+  max-width: 400px;
+  width: 40%;
+  float: left;
+}
+.article1 {
+  display: inline-block;
+  padding-right: 20px;
+  margin: 0;
+  padding-top: 30px;
+  width: 40%;
+  vertical-align: middle;
+  float: left;
+  text-align: left;
+}
+.img2 {
+  display: inline-block;
+  padding: 30px;
+  max-width: 400px;
+  width: 40%;
+  float: right;
+}
+.article2 {
+  display: inline-block;
+  padding-left: 20px;
+  margin: 0;
+  padding-top: 30px;
+  width: 40%;
+  vertical-align: middle;
+  float: right;
+  text-align: right;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  background-color: rbga(0,0,0,0.8);
+}
+
+.modal-content {
+  position: relative;
+  background-color: brown;
+  margin: auto;
+  padding: 0;
+  border: 8px solid tan;
+  border-radius: 20px;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+@@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-header {
+  padding: 2px 16px;
+  background-color: tan;
+  color: white;
+}
+.modal-body {
+  padding: 2px 16px;
+  border-top: 5px solid orange;
+}
+.modal-footer {
+  padding: 2px 16px;
+  background: tan;
+  color: white;
+}
